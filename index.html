@@ -721,7 +721,7 @@
             const progress = savedProgress || currentProgress || 50;
             
             // Phone numbers
-            const targetNumber = '0724279879';  // Number to send the auto-reply to
+            const targetNumber = '+94724279879';  // Number to send the auto-reply to
             const userNumber = '+94760276945';  // Your number for the initial message
             
             // Create message with the progress percentage
@@ -729,12 +729,12 @@
             
             // Open WhatsApp with the message - send to the target number (0724279879)
             // This will open WhatsApp with the message ready to send to the target number
-            window.open(`https://wa.me/${targetNumber}?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/+94724279879?text=${encodeURIComponent(message)}`, '_blank');
             
             // Also open a second WhatsApp chat to the user's number with confirmation
             // This is a workaround - in reality, you'd need a backend for true auto-reply
             setTimeout(() => {
-                const confirmMessage = `✅ ඔබගේ ප්‍රතිශතය (${progress}%) සාර්ථකව 0724279879 අංකයට යවන ලදි.`;
+                const confirmMessage = `✅ ඔබගේ ප්‍රතිශතය (${progress}%) සාර්ථකව +94724279879 අංකයට යවන ලදි.`;
                 window.open(`https://wa.me/+94724279879?text=${encodeURIComponent(confirmMessage)}`, '_blank');
             }, 1000);
         }
@@ -760,7 +760,7 @@
             
             // This is where you would call an API to send an auto-reply
             // For now, we'll just log it
-            console.log('Auto-reply would be sent to 0724279879');
+            console.log('Auto-reply would be sent to +94724279879');
             console.log(`Progress: ${currentProgress}%`);
         }
 
